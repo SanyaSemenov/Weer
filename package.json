@@ -1,0 +1,23 @@
+{
+  "name": "weer",
+  "version": "0.1.0",
+  "description": "Sustainable fashion marketplace that connects consumers with ethical and sustainable fashion brands",
+  "scripts": {
+    "start": "npx concurrently -n front,back \"npm run start:front\" \"npm run start:back\"",
+    "start:back": "cd backend && npm run start",
+    "start:front": "cd frontend && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SanyaSemenov/Weer.git"
+  },
+  "author": "Alexander Semenov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SanyaSemenov/Weer/issues"
+  },
+  "homepage": "https://github.com/SanyaSemenov/Weer#readme",
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+}
